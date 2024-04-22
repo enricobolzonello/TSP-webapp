@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.get("/palle", (req, res) => {
     // Find all TSPLIB dataset in the appropriate directory
-    const directory = "data/test/";
+    const directory = path.join(__dirname, "/backend/data/test/");
     const directory_content = fs.readdirSync(directory);
     let tsp_files = directory_content.filter( ( elm ) => elm.match(/.*\.(tsp?)/ig));
 

@@ -3,7 +3,7 @@
 #include <unordered_map>
 
 extern "C" {
-    #include "./tsp_backend/main.h"
+    #include "./backend/src/main.h"
 }
 
 Napi::Object TSP_runner(const Napi::CallbackInfo& info){
